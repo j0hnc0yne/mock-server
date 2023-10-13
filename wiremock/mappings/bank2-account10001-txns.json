@@ -1,0 +1,14 @@
+{
+    "request": {
+        "url": "/api/bank2/account/transactions/10001",
+        "method": "GET"
+    },
+    "response": {
+        "status": 200,
+        "bodyFileName": "bank2-account10001-txns-resp.json",
+        "headers": {
+            "Content-Type": "application/json",
+            "cache-control": "no-cache"
+        }
+    }
+}

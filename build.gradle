@@ -1,0 +1,21 @@
+configurations {
+    mockServer
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    mockServer 'org.wiremock:wiremock-standalone:3.2.0'
+}
+
+task mockServer {
+    String mockServerJar = configurations.mockServer.singleFile.absolutePath
+    doLast {
+        javaexec {
+            main = '-jar'
+            args = [mockServerJar, '--port', '9080', '--root-dir', 'wiremock']
+        }
+    }
+}

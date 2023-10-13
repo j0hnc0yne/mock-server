@@ -1,0 +1,36 @@
+{
+    "postedActivities": {
+        "transactions": [
+            {
+                "activityId": "1",
+                "type": "TRANSFER",
+                "amount": {
+                    "value": 10000,
+                    "formatted": "$100.00"
+                },
+                "activityDate": "2023-10-13T00:00:00.000-04:00",
+                "status": "POSTED",
+                "activityDirection": "INBOUND",
+                "accountBalance": {
+                    "value": 10000,
+                    "formatted": "$100.00"
+                },
+                "description": "ACH Deposit from ABC Bank",
+                "transactionDate": "2023-10-13T00:00:00.000-04:00",
+                "postedDate": "2023-10-13T00:41:47.000-04:00",
+                "fromAccount": {
+                    "name": "ABC Bank",
+                    "type": null,
+                    "external": true
+                },
+                "toAccount": {
+                    "name": "Online Checking (1234)",
+                    "type": "checking",
+                    "external": false
+                },
+                "sendOn": "2023-10-12T00:00:00.000-04:00",
+                "links": []
+            }
+        ]
+    }
+}
